@@ -1,0 +1,17 @@
+.profilePicture img{
+   width: 100px;
+   padding: 10%;
+}
+.content{
+    display: flex;
+}
+.rdoButton{
+
+    width: 60%;
+    padding: 10px 0 0 30px;
+}
+.rdoButton .email{
+    margin-bottom: 20px;
+}
+
+

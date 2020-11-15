@@ -1,0 +1,17 @@
+.content{
+    display: block;
+    margin-bottom: 30px;
+}
+p{
+    padding-left: 50px;;
+}
+#fEmail{
+    border: 1px solid rgb(37, 105, 252);
+    margin-left: 50px;
+    border-radius: 5px;
+    width: 330px;
+    height: 30px;
+}
+#text{
+    margin-left: 50px;
+}

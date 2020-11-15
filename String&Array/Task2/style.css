@@ -1,0 +1,14 @@
+.container{
+    align-items: center;
+}
+form{
+    width: 450px;
+    border: 1px solid black;
+    display: flex;
+}
+.year{
+    margin: 0 0 25px 25px;
+}
+button{
+    margin: 50px 10px 0 10px;
+}

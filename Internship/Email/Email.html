@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="email-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <script>
+        function validateForm() {
+            var form = document.getElementById("resetForm");
+            var email = document.getElementById("fEmail").value;
+            var text = document.getElementById("text");
+            var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+            if (email.match(pattern)) {
+
+                form.classList.add("valid");
+                form.classList.remove("invalid");
+            } else {
+
+                form.classList.remove("valid");
+                form.classList.add("invalid");
+                text.innerHTML = "Please enter valid email address.";
+                text.style.color = "#ff0000";
+            }
+
+            if (email == "") {
+                form.classList.remove("valid");
+                form.classList.remove("invalid");
+                text.innerHTML = "";
+                text.style.color = "#ff0000";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="formArea">
+            <form name="resetForm" id="resetForm" action="../sending-method/SendMethod.html"
+                onsubmit="return validateForm()">
+                <div class="content">
+                    <span>
+                        <b><u>Find your account:</u></b>
+                    </span>
+                    <p>
+                        Please enter your Email to search for your account.
+                    </p>
+                    <input type="text" class="emailInput" placeholder="Enter your Email" name="fEmail" id="fEmail"
+                        onkeydown="validateForm()">
+                    <span id="text"></span>
+                </div>
+
+                <div class="bottom">
+                    <div class="btn">
+                        <button type="submit" class="btnSearch">Search?</button>
+                        <button type="submit">Cancel</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    </div>
+</body>
+
+</html>

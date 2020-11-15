@@ -1,0 +1,12 @@
+.content{
+    display: flex;
+    margin-bottom: 20px;
+}
+.content input{
+    width: 150px;
+    height: 30px;
+    font-size: 25px;
+}
+.content span{
+    padding-left: 40px;
+}

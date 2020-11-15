@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="send-method-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <script>
+        function alertFuntion(){
+            alert("Sorry we are unable to help you in the meantime. Please try to login again and perform the password change manually.");
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="formArea">
+            <form action="../enter-code/EnterSercurityCode.html">
+                <span>
+                    How do you want to receive the code to reset your password?
+                </span>
+                <div class="content">
+                    <div class="rdoButton">
+                        <div class="email">
+                            <input type="radio" name="email" checked>
+                            <label for="email">Send code via Email.
+                            *******@meocutee.com
+                            </label>
+                        </div>
+                        <div class="phone">
+                            <input type="radio" name="phone">
+                            <label for="phone">Send code via phone number.
+                            +84******640
+                            </label>
+                        </div>
+                    </div>
+                    <div class="profilePicture">
+                        <img src="blank.jpg">
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="link">
+                        <a href="#" onclick="alertFuntion()">
+                            <i>No longer to access to these?</i>
+                        </a>
+                    </div>
+                    <div class="btn">
+                        <button type="submit" class="btnSearch">Continute?</button>
+                        <button type="submit">Cancel</button>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.container{
+    margin: 20px 0;
+    text-align: center;
+}
+.container button{
+    background: mistyrose;
+    border-radius: 5px;
+}
+.top{
+    margin-left: 200px;
+}
